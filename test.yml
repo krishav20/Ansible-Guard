@@ -1,0 +1,5 @@
+- hosts: webservers
+  vars:
+    db_password: supersecret123
+  tasks:
+    - shell: apt-get install nginx && systemctl start nginx
